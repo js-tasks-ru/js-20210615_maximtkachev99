@@ -5,7 +5,7 @@
  * @returns {string[]}
  */
 export function sortStrings(arr, param = 'asc') {
-  let newArr = arr.slice();
+  const newArr = [...arr];
   let sortDir = null;
 
   switch (param) {
